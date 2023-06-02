@@ -1,0 +1,120 @@
+
+  
+  .bottom form {
+    display: flex;
+  }
+  
+  .bottom input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .bottom button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f9d55;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message span {
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-right: 10px;
+  }
+  
+  .text {
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+  .bg-green-800 {
+    background-color: #1f9d55;
+  }
+  
+  .bg-gray-700 {
+    background-color: #333;
+  }
+  
+  
+  /* SendIcon.vue */
+  .icon-send {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    cursor: pointer;
+  }
+  
+  .icon-send:hover {
+    color: #1f9d55;
+  }
+  
+  /* Message.vue */
+  .message-box {
+    margin-bottom: 10px;
+  }
+  
+  .message-box span {
+    font-weight: bold;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-right: 10px;
+  }
+  
+  .text {
+    padding: 10px;
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+  .bg-green-800 {
+    background-color: #1f9d55;
+  }
+  
+  .bg-gray-700 {
+    background-color: #333;
+  }
+  

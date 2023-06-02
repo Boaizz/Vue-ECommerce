@@ -1,0 +1,423 @@
+ [{
+         "id": 1,
+         "title": "iPhone 8 64GB",
+         "description": "An apple mobile which is nothing like apple",
+         "price": 549.99,
+         "discountPercentage": 12.96,
+         "rating": 4.37,
+         "stock": 2,
+         "brand": "Apple",
+         "category": "smartphones",
+         "images": [
+             "https://cdn.tgdd.vn/Products/Images/42/114113/iphone-8-64gb-hh-600x600.jpg",
+             "https://mobileessentials.com.au/wp-content/uploads/2021/09/i8-phone-1.jpg"
+
+         ]
+     },
+     {
+         "id": 2,
+         "title": "iPhone X",
+         "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+         "price": 899.99,
+         "discountPercentage": 17.94,
+         "rating": 4.44,
+         "stock": 34,
+         "brand": "Apple",
+         "category": "smartphones",
+         "images": [
+             "https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg"
+         ]
+     },
+     {
+         "id": 3,
+         "title": "Samsung Galaxy S20 FE",
+         "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+         "price": 924.99,
+         "discountPercentage": 15.46,
+         "rating": 4.09,
+         "stock": 36,
+         "brand": "Samsung",
+         "category": "smartphones",
+         "images": [
+             "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQDxUQEBAVFRUWFhAVEBYVFxUYFRUPFRcWFhYXFRcYHyggGBolHRUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGi0lHyYtLTArLS0rLS0tLy0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAAAQIEBwMFBgj/xABKEAABAwEEBAcMBwYGAwEAAAABAAIRAwQSITEFQVFhBxMicXKRsQYjMjRUc4GTobKz0RUzUnTB4fAUQlNilMMkY2SSwtJDgvFE/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAUBAwQCBv/EADsRAAIBAgEHCQcEAQUBAAAAAAABAgMRIQQFEjFRcbETMjRBYYGRofAVM1KCwcLhFCJy0SRCU5Ky8SP/2gAMAwEAAhEDEQA/ALxQhCABC1ndDpMWWzPrXbxAAY37TyYaOaTjuBVb2K12q1zVq2usJJhtOGMbuaIVVStGGs2ZNkNSvFzVlFdb27C20KsP2J/lVq9Z+SYbK/yq1es/JVfqo7DT7Kl8a8y0kKqTQqeVWn1n5JhpVPKrT6z8lP6mOwn2TP4l4MtlCqUsqeVWn1g+SaRU8qtPrPyR+pjsOvY8/iXmW4hVD3wf/qtPrB8k0uq+VWn1g+SP1MdgexqnxLzLgQqdL6vlVp9Z+SiWq22hhltrrgNF6o5zyYZMYCPCOMcxXUcoUnZI5qZpnTg5ymklv/ou1CqzR1bSldgqUbHULHAFj69phz2nIw7GDzKX+zaZ8lZ/UhXYi3Rht8vyWQhVsbNpnyVn9SFirWPTTv8AwNbzWln4tKMQ0YbX4fks5Cq42LTn8If1FL/okNh07/DH9RT/AOiMQ0YbX4fktJCqs2LTv8Mf1FL/AKpW2XTg/wDCw89ob+ACMQ0Y7X4L+y00KrDZ9O/wGf1Dfko9d2m2GHUG+vEdcLmc1BXk0l2slU08Ffw/JbaFR+kO6TSdmIdVY+liA17KgewOOV5owPM4K0O47TZtlmvPAFRjrlW7N0uuteHNnU5r2ujVJGpEKkZq6d92ITpuKvxVn67zoEIQuyoEIQgAQhCAOT4SPFGeeb8OouI7nqxZZS4Zy6OkTA9q7fhI8UZ55vw6ir3RT4sn/t/zCwZQr1Etx6bNq/wX/J8DdVbPTA74S92sknsmBzBQa1Cl9n2u+ayV7SAZ61B0hbGQLpxzdsGoAbefetmhHYI+Vqt4yfixukKdSgwVWB7MLzZLrjwMYIdhBGv0rctqhzQ4awCPSuZ7o+62pWswszg2GziMyYIEn0lbuyv72zot7AsuUJJpocZrlOUZKT1WJBKYSmlyaXLMOFEUlYyUpcsZcgsSBxTKNnbUqCm8S19awseNRY6o4EdRKCVk0f8AX0z/AKnR3xSrqHPMGduiS3riW6UhQUhTE8mNKQpU0oJEK09i0XVp2urXdaHOY8ENpmYbJBGEwIggRt69uUhUgImpyaUEoiW6o5rHHkgRmXRH651pH22+PCJ9JUzunslR9NppBxg8poObYzjWRuxxXEOqAkC+4GcIbjPOEmy6DlUtd2t4+u27GOTU04X9I2WlqLX0awfUEGnUF1w13SQRjnIC2vBR9S/e2zE89wjsA6lyelWVGtc25UcLjpwc7904kyYXV8Ew7y/oWX3XK/Iabpxae36FWVY33fcjvkIQmAuBCEIAEIQgDlOEjxRnnm/DqKs7E+LIef8A5Ky+EfxWn54fDqqrab4sbjsvexywZR7xdx6nNSvkMt74Ga1WgASXegZxtK53SOkswD8/yWCrpU3s8CIcBsyIE7RrUHT9spuINMAF0G60zcYBADjkXHExjAhbWlY89DSvqwI1ptUlWlZXd7Z0W9gVN35cOcK37M7vbei3sCyZT1D7NCvp9xILk0uTCUhKzDvRHEppKaSglSdaIErNo89/p/edH/FKjkrNo49+pfetH/FKuoc9C7O/RJb1xLfKaUpTCmB5ACU0pSmlSSBSFBSFBI0qHbtI0aMcbUDZmJnVzKWuB7t2Wgv4x9EBjeS17TMtkls454nUM1xOTSwNGT0o1J6MnZGyt3dVTvni7QRGABp8lx234JaOdcTpy2m+4ipSxcSbhcSXHExyQwZ5tA51r6z3amdZw9i1j+U+KjwwY5Q6DsgGVxybk7v6jJ0I0+bfvSXnZGdlpY4vv1HDkOuwCQXb9gVqcEv1DuhZvdcqfvUwS2lL8DLnDDLMDMK3+CU/4d3Qs3uvXWilaxhyrBd33RO/QhC6FwIQhAAhCEAcjwj+L0vPf26iqd7v8DV5qnara4RfF6Xnv7VVVFU8SrD+WqsOUe8XceqzOv8ADlvfA4J1RzsgsLt6yseIDXeDBu7GuM8oiDMYSMyAktNnLGNccnl3FyIvUxAvAbCZjmK2WwueeU7vRsYWnlDnHargsx723ot7Aqdp+E3nb2q3bKe9t6LexZco6h9mb/X3EiUhKbKQlZh6OJSEpJTSVIXFJWfRp79S+9aP+KoZKlaNPfaX3vR/xVbQ56Fud+iS3riXAUhSlNKYHkRCkKCkKkAKYUpTSUHQjnAZmFxXCE61lo4stdRdng0Fj2/zEySZOWxba322ahuuBAMYGQoNe1AA3ocMy1wlpjaEmrZ00Krg4ft1Xvj4ardmzVfUb6FBxan69dpV9bjCCL53BoMndtKgcTXYZaHtb9ogsEbCTnzFbW1WtvHOqXuL5Ti0AHCdQugrW1Xhx8EkmfCGE7XZkppGclrQxnTjLm8R9mc1zXX6hwDsBkTB9m9WtwQ/V1PNWP8AvKoXBozdedDsP3QIOofkre4IPq6vmrH/AHlL1owZZzbbI/dEsVCELoUAhCEACEIQByfCJ9RS89/bqKrNGtDqZaciXg8xVqcIQ/w9I/5w9tOqqq0UeQek7tWDKef3Hrsx9Ff8nwRz1fuMIcTTq4agRksdTuPquMurScBJxwGQ5l2V5ErlVp7S95tyb4fNnJ2DuNDXh1R8gEGF125NlLeUSm5ay+jk9OgrU1a46UhKYXJpcoLR5KYXJpcmEoJHlylaMPfaP3vR/wAVa8lTdFnvtH73o/4qso88W526LLeuJcpTSlKQpijyYhSJStJ3WV6lOyOqUXXXsLHj+YNcC5p2iJkbApSu7HSV3Y25K5HhBrVQymxsim69xhGtwi607szGv0J2lu6I1KFLi2wKzLzzOLeVdLR6WuBQ+3sNiqU6zb4AaG772DcdUGMeZDw1mujTlCUZtXx1eVzgadudRMsdG0ajzrYUdLiu0hoF6MWntG5ajSNkcWB04gNBCwWXQde7xoBvS0NYDDhlJPo1LPXyKnVV+vaNHKzImkWgPMZ5QIz3Si3aIq0yOQ6o6AY1A7NUra6O0aTWc2rg4B4LHjE44GRug+ldNRZgLzTOEu1emV3Qh+3F6sDub0Vvx8dWvsK1eKrQHOpXA4OAhsDI4Gcjz9QVwcEH1VTzVj/vLk9ONIs1QAG8Qcs51rruCBo/Z3O207MPQBUI7SuppXVhZlmCd3fD7kWGhCECoEIQgAQhCAOW4QPF6Xn2/Cqqo9GnkHpO7VbXCF9TR88Ph1FUWjzyT0ndqw5Rz+49ZmTor/l9EbG8kvLHeReVI2uZLyQuWO8guUnI+8kLky8kLkAOLk0uTS5MLkAOJU/RR75R++aP+KtYXLYaJPfKH3zR/wAVW0eeLs7dFlvXEukppKUppW88qBVdd2VvdXfdgBlKo5oOMz4JJ9I9q2Xdnpi0Wa0UzSdDWsvlv7rwXEODtsADmWhtlqBZxmDg43qn8weeVzHElTKUYr9/XqGeRZPNONVWfr+v6IdGs4MYwjBjql3ovukjrBPpKyUba40XMc0jEY4xda4EJaVoLKL2xN17Q46wCS3tjrUZ1V5BMcgC6CBgC4iJPO1V1sptbatf5GMKKxwwvhx+o6tVuOhpBGGEY3c5HbO9TLLUlpBMnMRmRGB51rRfcQ7Jw5PViPRBU+zughriTBBHMsrrOcm3q6ix01GNlrNZZax46/UcZJALjhOr5LdUtIjjbm4+mIy9vUoVWiyrUfRm7ygQYk4ODsBryUbSdnh8REQRJxjMTsK1UrpEzUKjs9mBstKua+lUHgm5UmMJF09WpdFwP+Ku6Fn7HrhWWem5tR15wIp1CeW6XOg5445LteB36qp5mx/3l3UtdWFGXQccH8P3RLGQhCgUAhCEACEIQByvCCO80T/nj20qvyVPWE4HpO7Vcfd99RR8+34dVUxYzgek7tWGv7zuPWZm6I/5fRE28i8sd5F5VjMyXkl5Y7yLyAHykLky8kvIAfeSFyYXJpKAHXlsdEnl0Pvuj/irVErZ6IPLoffdH/FCso89C7OvRZb1xLsKQpSU0pgeWOZ7vrIx1kNY4OpQWna17mtc0889YCra++7cBwiB6VZmnqZcyrZqhinVY99F5xu1Wcs0z1XhuDhqC4Cs1jHOYAcLsziDEH0KKrjyWL6x1mybV461r9eIyxsDmGm1x5QF4EbHA4Y7lntOiqhgscZgAtwDSB+tix2u1MLg9ktM8vDtH47lP0a6pVDi2DdiROJB148yTOTvovyGU5SitPVv8CK6xvFO7UEVG4txHKZnAg86wWetPKEyBltj8VuDWY9pp1vQ04QRrk5ehauzsbRcCx98zOM9R261Y8bNEQk2mmsfI2OjrGGuFfW/wpzAOQ+e/mUbSVme6q7DDbrjLWpgfUJaSAADPJxBwIg7M1AtulWttIbfGLQRHVj1exb4T1tIzx0tK9yJbLOG0nXWxda+9tMtIxJ9K7LgeYeIe7UaVlG+QKp/5Ln7e4OoVIwNyoThOo4hdJwP+Ku6Fm916sclK1hdlzdsdn3RLBQhCkUAhCEACEIQBzHd74vS8+34dVUpZjn0ndquvu++oo+fb8OqqQoHPpO7Vhr8/uPWZm6J830RLvIvLHeReVYyMkpLyxlyQlAGS8klMlEoAdKQlNlISgBxK2mhzy7P990f8ULUStnop0OoHZbbAeqqFbR56F+deiy3riXgVDrW5ocWxMZ865et3SVmVzBBbJEao3Ja+lOW6oRyYkwmnJSWs85yLRE0xWL2SSSQ69nkZ9i5is5r3EGbxzIwy19mCn6QtbQ4vpOeQbxLXxAkZDctXo/SdEiJ5QmZnE85SmdGcXi7j3J1ZXt3Ex9Z9IMbTpNN4tbLsy8/hvUxtI5vIBEjkEgdeBUG02wuu3AJaQ4biDmVI+km1HhvEtDjm58BgJ2nbgVxOGi0i56WtLeYreyk1pLATrIlx5zOJKx0KtO5LSNs7NxT9K2pjHClSIe+OWQOQJyAg5569i0WkKrRXLQ2MGz0i0H05qUtdtfrrxO4YxV7+vWBu69rpwWF4xzxwlYjaafFBj4F4m7OwnVuWhe4kYCdfoS2W13XXgA7ViMhuOpdUso0W3bvxwJnSTwe83VepcpPbeHgvgTJ8E613HA/4sehZvdeuGdbmVKTw5om4/MD7JyK7ngf8VPQs3uuV9J3bd0/TE+ct3V9YlgoQhaBKCEIQAIQhAHMd331FHz7fh1VR1I+F0j2q8e776ij59vw6qoumcXdJ3asNf3nceszP0T5voiRKJWOUSqxkZJSSmSiUAPlEpkolADpSSmyglACkqfZTyKf3qye+tcSthY3Qymf9VY/fVtHnoX506M964o7Blhvy9p5lIp0y6k6mcJBCxta0kltW5uG1QdL22pRi7jOBMJ5i8BG7tnO6RqEAtJ1uad8YLnrULvIgyIe7044dS3NuDXAPfPJLnEDEuJ/Nas3n8ZVdyeSQN2Bgb/zWOpDRlquNY1NONlhtJmhLa5lSLstIAJxvZCN2creWgm6WuAaHQWjEmf5tU/JazuatFL9mGV5hdxm04yCfRHUtpardRLLwdeLy0NDcYgySY5isOUwUZvQjbWXUJNxjJu9/XkRKNemx0ON0gwScBhvWWzWMVnvfTEkFt3aREe3FQtLlpdBwMNMnt6oCyWKyuqVGNmAJIjAzG1U6N8O8vlquTW2a7fJEANcXiMcAfzWjrWeDeZ+RBXTaTYyy2Sq8y6Q1oGsucQHGdeBJ9C519oaWsIP61z1LicHo3OITUmyRxR4lz26muvjWMCrJ4H/ABZ3Qs3uuVeU6J4urVDoHF1JGow0wrC4H/Fn9Gz+65a6CS1etYpzm8bdn3RLCQhC0iQEIQgAQhCAOX7vvF6Xn2/DqqimnF3Oe1XrwgeLU/PD4dVUQM3c57Vir+87j1mZuifM+BlBRKZKJVQyHyiUyUSgB8olMlLKkBZQSmyiUBcUlbCyfV0/vVl99a2VsbGe9sJ8qshPNfVtHnoXZz6M964o6CpYDTffEuGcbCs1otofTB9m9NtVUspmpxmc3WrU6Np2h0w3DHPWnidxU11si2lwdPJu4wVotKOIhs4ZgDZtK2uk6rmvLS2CM9q191pdef7VlljKzxNuuH7Vb1wNRbnXWloGEzvh+r2LcaGaGgVGkzeDn7dsdqgaQe0uPJw5Lec5pprvZBZhAg7CN4VlWkqkLLX61melVVOq5SxSw3dq4HRaUeKjDTeYe1wDTGD6Zxb7OxY9GW+rQaSwjkF45WODZELXNoPqQ95yAu7BshFQO+rbk+6520uGB6yJWKnSWi3LqfFfg3t4pW1r1xJ+lNL1rW0B7QGNMhrdbspJOevrWspPdTqNMTiMDlOqev2plZz6YqcojlCADrP/AMWPFxDdkyd6olRcMV1nN4v9tsToTpEmk6mGBjS197GSRBw3BWZwPeLP6Nn91ypvRtUU31WVXHwDcJk43Thuz9iuTge8Wf0bP7rl1STUmn2cBdnCSkr9jv3SiiwkIQtAmBCEIAEIQgDl+EDxan54fDqqhycXc5V78IHi1Pzw+HVVDE4u5z2rFX953Hq8zdE+b6D5SymoVYzFlEpCVj4wdv69iDltIyyklYhVHYlNUKbEaS2mWUSmNfKcoJTuKp1KOIbOXHWaea8VBU+ysvUmt22izDreQraPPRhzl0d748UTOLJ14atymWbTd1l27ksNtc2kbkSdZWpq2nEgRimcqqWCMsaGkry1C6XtZquvXAJ1643qKysCII3HnTqXKfexuDWdZT30QDDdxO4riN3iWtJKyINtoSOsnecB+HtUWmzbj2rbVGnIgrC2zwZAUqrKOKOJZNGTxEtFY0KQuwTsPXPWsVC2gObfEwASR9vGe1MqgOwLYWCrRgHcDB3qyMMHpdZXUrSjJODwWpEevWc6o5/2jkcgNSlWa0kGQA4x4OQbv3pjLOXRGzFPIhrXAQZH+0gqqcYPFI5pupHFt7fXbiY2tcXOcTJIdM8yvDge8Wf0bP7rlTlB4F8ubjd1bwri4HfF39Gze45U9eq3/hjyxJLB3wf/AGiWGhCF0KwQhCABCEIA5bhB8Wp+eHwqqoY5nnKvnhB8Wp+eHw6qobWecrFX953Hq8z9E+Z8ACVAQqxiEJLo2BOhEIAS6NiLg2J4CWEANDUQnwkhACQptN92iHbK1nd1OJUSFMY2aIG2vZx1uKspc9GHOHuHvXFGc23jZN0RrOtQ6NKJyE7+UQtvabO2lTkMk69XMAtMKLuLc9w5R9g2BbXrCBkoXXuDAYAxDdbisde1NFZrCRPKmNRjJa5lU0S5/wC9EM3TtWsbVPKP7x5JJ1A5rXTgtHeYK+UNSSt6R07m3jhzgydSSqIaAccsk7Q7mizsG49pTuI4zlTtGCpjhI24yhvMFOz0nkhzyw7Ilp/XOo1ss1zklwLdRBzBWybodxF5uYxElRbRQmQeVC0LHqMM1Z2vc1rXXS0jV7R+imVqjncmABM841LPaGhpuEwdW755rLbKF2iyoJN4EO6Y/A49QVMopBdtNXMFnMA4zyXYRjkVc3A74u/o2b3HKlGNzM4Q7PbGSuvgd8Xf0bN7hVE9aMeVamuz7olhoQhAtBCEIAEIQgDleEPxan55vw6qobWecq+OETxWn54fCqqh2ZnnKxV/edx6vNHRPmfAeEsJQlVYxABLCAhAAAlhCVBAkJYShLCAGwplJ12m07LRZT1PJUaE+01A2zlxMBtSi49EFxJVlLnGLODSoNvauKJtotwvGo6SSeQ05NG0pr75o8lwh8yY8Fn4KFaGB14U8QM3beZNtTnClAF1gGImSXb1sje1yHJXaI9st1Om0BjQbuNOR4dXK+R9kalpqTGklzyTGLtrnHUnlt4zEuOH6Cyua1o4vPGah2kZNC20hVWlpO7N1o2sAwXovEAuA1B2LR1Qtnoyx35Ac4NDrxA34R7Fy9ltpp1XEi9eIOG0Ydi3miNOBr3wwlpAzgEuGz0FQ4XldGmFb/5uN8VgifaLe6k8MABExEw6NgnMrFa7fUDRxdK7JgkxPPgpj7Myqz9pc7EjklsRTjMGR4W0rD+yPe++94GGDWjkwMzjOJnNduSaKlG2JoLXZXCq2o7XDSeyeuFKtFM8Vc57nSmQOxTGxXL6AbF0FrnHMuiWFuyDBncoLX32NmbwME7DkWgbz2KibO42VyIKV8ObIwBcTliAcFb/AAO+Lv6Nm9wqr7XyKLqjhBa0gzhIOEb8SIVn8Dp/w9Tms/uFZm7sx5Yrf8fuRYiEIXQsBCEIAEIQgDS91WjXWmyvp04v+FTnIvbqJ1SJE6pXne0UalGq6lUY5jwTLXi64eg5jeMF6iWGvZqdQQ9jXD+YA9qqqUlN3GORZxnk0XC103fZieZQebrCdK9I/RNm8nperZ8kfRNm8nperZ8lX+n7Tb7bXweZ5vBS3l6P+ibN5PS9Wz5JPomzeT0vVs+SOQ7Q9tr4PM843/1KW+vSX7FS/hM/2t+SY/RtBxk0aZO9jT+CP0/aHttfB5/g8430cYvRn0TZvJ6Xq2fJH0TZvJ6Xq2fJHIdoe21/t+Z5yNXmTLRVDqbqZIh0A7Z1RtzOG9ekPomzeT0vVs+SdT0dQaZbRpg7QxoPYpjRad7ldbO0asHCVPB9p5gsuhtIsbds9WWagIcBuxBjmRV0JpV/hPBxx5Iz/wBq9Q1rDReZfSY47XNaT7QmfRNm8nperZ8lfiLeW6lKdv5fg8ut7nNJgyCZ5vySDua0lt9n5L1H9FWbyel6tnyR9FWbyel6tnyU6U9pHKLbLxPLw7ndKXr047bo+SG9zulBkTnOWvqXqH6Ks3k9L1bPkj6Ks3k9L1bPkjTntDlFtl4nmSjojTDRDX4HEiAQTvBbisrbBpoZVTrjktjHPC6vS30VZvJ6Xq2fJH0VZvJ6Xq2fJReRPLYW0p+J5nGjdMBxcKhk4k3W4mI+zuWKjofSrHXmvhxk+CNs/ZXp36Ks3k9L1bPkj6Js3k9L1bPkh6TDll8U/E8x1dCW2q9v7TVLzPIpNxe538tNoxPoV/8AB7oSpZLH31t2pUcHuZM3GhjabGE6yGsBO8ldHQstOn4FNrei0DsWdRbG5xKpdNK+Ott3BCELoqBCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIAEIQgAQhCABCEIA//Z"
+         ]
+     },
+     {
+         "id": 4,
+         "title": "Jordan Mid 1",
+         "description": "This iteration of the AJ1 re-imagines Mike's first signature model with a fresh mix of colours. Premium materials, soft cushioning and a padded ankle collar offer total support and celebrate the shoe that started it all.",
+         "price": 169.99,
+         "discountPercentage": 17.91,
+         "rating": 4.3,
+         "stock": 0,
+         "brand": "Nike",
+         "category": "shoes",
+         "images": [
+             "https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/0c942c8a-cba3-489e-837c-f439edd2c2b0/air-jordan-1-mid-older-shoes-hwb3kx.png"
+         ]
+     },
+     {
+         "id": 5,
+         "title": "iPhone 12 Pro Max 128GB",
+         "description": "Enjoy all the breathtaking benefits of the iPhone 12 at its best with the iPhone 12 Pro Max. You’ll be entertained with the large 6.7-inch OLED display and take advantage of captivating camera advancements that make this iPhone an excellent choice for night-time and low-light shooting.",
+         "price": 1249.99,
+         "discountPercentage": 10.58,
+         "rating": 4.09,
+         "stock": 32,
+         "brand": "Apple",
+         "category": "smartphones",
+         "images": [
+             "https://cdn.reebelo.com/pim/products/P-IPHONE12PROMAX/PAC-image-0.jpg"
+         ]
+     },
+     {
+         "id": 6,
+         "title": "IPhone 13 128GB",
+         "description": "The iPhone 13 features a Super Retina XDR display, an incredible dual camera, a mind-blowing seamless experience with the A15 Bionic Chip and 5G. It’s everything you could ever want in a smartphone, made even more durable with Ceramic Shield for extra security and protection.",
+         "price": 1749.99,
+         "discountPercentage": 11.02,
+         "rating": 4.57,
+         "stock": 83,
+         "brand": "Apple",
+         "category": "smartphones",
+         "images": [
+             "https://http2.mlstatic.com/D_NQ_NP_764101-MLA47781264755_102021-O.jpg"
+         ]
+     },
+     {
+         "id": 7,
+         "title": "Acer Nitro 5",
+         "description": "9th Gen Intel Core i5-9300H, NVIDIA GeForce GTX 1650, 15.6 Full HD IPS Display, 8GB DDR4, 256GB NVMe SSD, Wi-Fi 6, Backlit Keyboard, Alexa Built-in, AN515-54-5812",
+         "price": 999.99,
+         "discountPercentage": 4.15,
+         "rating": 4.25,
+         "stock": 50,
+         "brand": "Acer",
+         "category": "laptops",
+         "images": [
+             "https://m.media-amazon.com/images/I/81lWUzhyBlL.jpg"
+         ]
+     },
+     {
+         "id": 8,
+         "title": "HP Pavilion Gaming 15",
+         "description": "The HP Pavilion Gaming 15 is powered by an Octa-Core ​10th Gen Intel Core i5-10300H cruizing at a speed of 2.3GHz with an internal memory of 8GB DDR4. It has a mammoth internal storage of 256GB SSD. An optical drive SuperMulti DVD with a display of 15.6 ” IPS technology rendering a 1920 x 1080 resolution on WLED and NVIDIA GeForce GTX 1650 graphics with 4GB DDR4.",
+         "price": 1499.99,
+         "discountPercentage": 10.23,
+         "rating": 3.6,
+         "stock": 0,
+         "brand": "HP",
+         "category": "laptops",
+         "images": [
+             "data:image/jpeg;base64,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"
+         ]
+     },
+     {
+         "id": 9,
+         "title": "Surface Pro 7+",
+         "description": "Classic Surface Pro 2-in-1 design meets high-speed performance to give you premium laptop power, a powerful tablet, or portable digital canvas designed to light up the best of Windows 11. Adjust the Kickstand, add a Type Cover,* and do more of what you love.",
+         "price": 1349.99,
+         "discountPercentage": 11.83,
+         "rating": 4.54,
+         "stock": 96,
+         "brand": "Microsoft Surface",
+         "category": "laptops",
+         "images": [
+             "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OUUT?ver=74e1&q=90&m=6&h=705&w=1253&b=%23FFFFFFFF&f=jpg&o=f&p=140&aim=true"
+         ]
+     },
+     {
+         "id": 10,
+         "title": "APPLE MACBOOK PRO 16-INCH (2021)",
+         "description": "The Apple M1 chip gives the 16-inch MacBook Pro speed and power beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. Our most advanced Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life — the longest of any Mac ever. It’s our most popular pro notebook, taken to a whole new level.",
+         "price": 3749.99,
+         "discountPercentage": 6.18,
+         "rating": 4.43,
+         "stock": 89,
+         "brand": "Apple",
+         "category": "laptops",
+         "images": [
+             "https://i.expansys.net/img/b/368010/apple-macbook-pro-16-inch-2021.jpg"
+         ]
+     },
+     {
+         "id": 11,
+         "title": "Latitude 5330 Laptop",
+         "description": "Our 5000 Series were the 1st PCs in the world made with tree-based bioplastic. The lid contains 21% bioplastic, 30% recycled plastic and 20% reclaimed carbon fiber. We also added 39% bio-based rubber to the bottom bumpers.",
+         "price": 1299.99,
+         "discountPercentage": 8.4,
+         "rating": 3.87,
+         "stock": 65,
+         "brand": "Dell",
+         "category": "laptops",
+         "images": [
+             "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/latitude-notebooks/13-5330/media-gallery/notebook-latitude-13-5330-gray-gallery-3.psd?fmt=pjpg&pscan=auto&scl=1&wid=3997&hei=2783&qlt=100,1&resMode=sharp2&size=3997,2783&chrss=full&imwidth=5000"
+         ]
+     },
+     {
+         "id": 12,
+         "title": "Asus ROG Strix 15.6",
+         "description": "Asus ROG Strix 15.6” FHD 300Hz AMD Ryzen™ 9 5900HX 16GB 512GB SSD WIN11 HOME AMD RADEON RX 6800M 12GB DDR6 WIFI6 RGB W10H Gaming Notebook (G513QY-HF001W) Panel Size 15.6-inch, Resolution FHD (1920 x 1080) 16:9 300Hz",
+         "price": 2799.99,
+         "discountPercentage": 15.66,
+         "rating": 4,
+         "stock": 52,
+         "brand": "ASUS",
+         "category": "laptops",
+         "images": [
+             "https://www.zqracing.com.au/wp-content/uploads/2021/04/NBA-G513QY-HF001W.jpg"
+         ]
+     },
+     {
+         "id": 13,
+         "title": "Apple Airpod 1st Generation",
+         "description": "Driven by the custom Apple W1 chip, AirPods use optical sensors and a motion accelerometer to detect when they’re in your ears. Whether you’re using both AirPods or just one, the W1 chip automatically routes the audio and engages the microphone. And when you’re on a call or talking to Siri, an additional accelerometer works with beamforming microphones to filter out background noise and focus on the sound of your voice. Because the ultralow-power W1 chip manages battery life so well, AirPods deliver an incredible 5 hours of listening time on one charge.2 And they’re made to keep up with you, thanks to a charging case that holds multiple additional charges for more than 24 hours of listening time.3 Need a quick charge? Just 15 minutes in the case gives you 3 hours of listening time.4",
+         "price": 169.99,
+         "discountPercentage": 8.14,
+         "rating": 4.59,
+         "stock": 61,
+         "brand": "Apple",
+         "category": "headphone",
+         "images": [
+             "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP750/SP750-airpods.jpeg"
+         ]
+     },
+     {
+         "id": 14,
+         "title": "Apple Airpod 2nd Generation",
+         "description": "Powered by the Apple H1 headphone chip, AirPods use optical sensors and motion accelerometers to detect when they’re in your ears. Whether you’re using both AirPods or just one, the H1 chip automatically routes the audio and engages the microphone. And when you’re on a call or talking to Siri, an additional speech-detecting accelerometer works with beamforming microphones to filter out external noise and focus on the sound of your voice. ",
+         "price": 219.99,
+         "discountPercentage": 15.6,
+         "rating": 4.21,
+         "stock": 114,
+         "brand": "Apple",
+         "category": "headphone",
+         "images": [
+             "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MV7N2?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1551489688005"
+         ]
+     },
+     {
+         "id": 15,
+         "title": "Apple Airpod 3rd Generation",
+         "description": "AirPods are lightweight and offer a contoured design. They sit at just the right angle for comfort and to better direct audio to your ear. The stem is 33 per cent shorter than AirPods (2nd generation) and includes a force sensor to easily control music and calls.",
+         "price": 289.99,
+         "discountPercentage": 10.99,
+         "rating": 4.89,
+         "stock": 105,
+         "brand": "Apple",
+         "category": "headphone",
+         "images": [
+             "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MME73?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1632861342000"
+         ]
+     },
+     {
+         "id": 16,
+         "title": "JBL Tune510BT",
+         "description": "Feel the rhythm of the beat with JBL Tune510BT wireless headphones featuring crisp, powerful JBL Pure Bass Sound which can be found in the most famous venues all around the world. Easy to use, these headphones provide up to 40 hours of pure pleasure and an extra 2 hours of battery with just 5 minutes of power with the USB-C charging cable. Wirelessly stream high-quality sound from your phone without a messy cord, while multi-point connections allow you to switch effortlessly from one Bluetooth device to another. A lightweight, foldable design allows you to easily carry your headphones on-the-go, combined with soft, padded ear cushions to keep ears comfy all day long. Items delivered: 1 x JBL Tune510BT wireless over-ear headphones in black, type-C USB charging cable, warranty/warning, quick start guide",
+         "price": 329.99,
+         "discountPercentage": 13.31,
+         "rating": 4.83,
+         "stock": 0,
+         "brand": "JBL",
+         "category": "headphone",
+         "images": [
+             "https://m.media-amazon.com/images/I/71+u7587bjL._AC_UF894,1000_QL80_.jpg"
+         ]
+     },
+     {
+         "id": 17,
+         "title": "JBL Wave 200 True Wireless Earbuds Black",
+         "description": "Feel and hear the bass with JBL Deep Bass Sound and listen for up to 20 hours when combined with the charging case, for a more enjoyable everyday routine. The Wave 200TWS have a comfortable, ergonomic design thanks to their in-ear stick form, and with 3 ear tips in different sizes you can ensure an exact fit for your ears for extra comfort and clarity. Get active. Designed to go with your flow featuring 1PX2 water-resistant materials that can stand up to rain and sweat so you can listen at home or while enjoying a high-intensity workout. Dual Connect technology lets you take calls or listen to music with either bud or both; choose which one to use and leave the other one in the case to save battery. Items delivered: 1 x JBL Wave 200TWS in-ear headphones with charging case and JBL Deep Bass Sound, 1 x USB type-C charging cable, 3 x ear tips, 1 x Quick Start Guide and safety sheet, in black",
+         "price": 65.99,
+         "discountPercentage": 4.09,
+         "rating": 4.52,
+         "stock": 78,
+         "brand": "JBL",
+         "category": "headphone",
+         "images": [
+             "https://m.media-amazon.com/images/I/51Z7AxeZKKL._AC_UF894,1000_QL80_.jpg"
+         ]
+     },
+     {
+         "id": 18,
+         "title": "Apple Airpods Max",
+         "description": "Compatible hardware and software required. Works with compatible content in supported apps. Not all content available in Dolby Atmos. iPhone with TrueDepth camera required to create a personal profile for Spatial Audio, which will sync across Apple devices running the latest operating system software, including iOS, iPadOS, macOS and tvOS.",
+         "price": 849.99,
+         "discountPercentage": 13.1,
+         "rating": 4.56,
+         "stock": 88,
+         "brand": "Apple",
+         "category": "headphone",
+         "images": [
+             "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-max-select-spacegray-202011_FV1_FMT_WHH?wid=940&hei=800&fmt=jpeg&qlt=90&.v=1604776025000"
+         ]
+     },
+     {
+         "id": 19,
+         "title": "Super Mouse.",
+         "description": "Super mouse can eat anything in your fridge.",
+         "price": 1.99,
+         "discountPercentage": 10.68,
+         "rating": 1.23,
+         "stock": 0,
+         "brand": "Apple",
+         "category": "mouse",
+         "images": [
+             "https://images.theconversation.com/files/265294/original/file-20190322-36283-1me4pb6.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop"
+         ]
+     },
+     {
+         "id": 20,
+         "title": "Magic Mouse — White Multi-Touch Surface",
+         "description": "Magic Mouse is wireless and rechargeable, with an optimised foot design that lets it glide smoothly across your desk. The Multi-Touch surface allows you to perform simple gestures such as swiping between web pages and scrolling through documents. The rechargeable battery will power your Magic Mouse for about a month or more between charges. It’s ready to go straight out of the box and pairs automatically with your Mac, and it includes a woven USB-C to Lightning Cable that lets you pair and charge by connecting to a USB-C port on your Mac.",
+         "price": 109.99,
+         "discountPercentage": 16.99,
+         "rating": 4.06,
+         "stock": 140,
+         "brand": "mouse",
+         "category": "pets",
+         "images": [
+             "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MK2E3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1626468075000"
+         ]
+     },
+     {
+         "id": 21,
+         "title": "Logitech G502 HERO",
+         "description": "Logitech G502 HERO High Performance Gaming Mouse - 16.8 million Colour RGB Lighting Option - HERO 16K DPI Optical Sensor - 32-bit ARM Microprocessor - 11 Programmable Buttons - 3 DPI indicator LEDs - 5x 3.6g Adjustable Weights - Rubberised side grips - 2.1m braided cable with hook and loop cable tie - Requires Windows 7 or later, Mac OS 10.11 or later, Chrome OS - 910-005472 - 2-Year Limited Hardware Warranty",
+         "price": 20,
+         "discountPercentage": 4.81,
+         "rating": 4.44,
+         "stock": 133,
+         "brand": "Logitech",
+         "category": "mouse",
+         "images": [
+             "https://ht.com.au/web/image/product.product/1851/image_1024"
+         ]
+     },
+     {
+         "id": 22,
+         "title": "Razer Basilisk V3 Ergonomic Wired Gaming Mouse, Black",
+         "description": "10+1 Programmable Buttons For Limitless Configurations: Assign all your macros and secondary functions across 11 programmable buttons—including its acclaimed multi-function trigger—to execute essential actions like push-to-talk, ping, and more. Razer HyperScroll Tilt Wheel For Smooth, Free-Spin Scrolling or Tactile Cycling: Speed through content with a scroll wheel that free-spins until it’s stopped, or switch to tactile mode for more precision and satisfying feedback that’s ideal for cycling through weapons or skills. 12 Razer Chroma RGB Lighting Zones For Customizable Lighting Effects and Full Underglow: Bask in the Razer Basilisk V3’s glory as you customize each zone from over 16.8 million colors and countless lighting effects, all while it reacts dynamically with over 150 Chroma-integrated games. Iconic Ergonomic Design with Thumb Rest For Effortless Use and Long-lasting Comfort: Favored by millions worldwide, the mouse’s signature form factor perfectly supports your hand while its buttons are optimally positioned for quick and easy access.",
+         "price": 65.99,
+         "discountPercentage": 15.58,
+         "rating": 4.57,
+         "stock": 146,
+         "brand": "Razer",
+         "category": "mouse",
+         "images": [
+             "https://m.media-amazon.com/images/I/61AcT0ZuO3L.jpg"
+         ]
+     },
+     {
+         "id": 23,
+         "title": "Razer Basilisk V3 Pro White Edition Ergonomic Wireless Gaming Mouse",
+         "description": "Razer HyperScroll Tilt Wheel Smooth, free-spin scrolling or tactile cycling 13-Zone chroma lighting with full underglow Iconic Ergonomic Form with 10+1 Programmable Buttons Cutting-edge ergonomics and control",
+         "price": 289.99,
+         "discountPercentage": 8.04,
+         "rating": 4.85,
+         "stock": 26,
+         "brand": "Razer",
+         "category": "mouse",
+         "images": [
+             "https://m.media-amazon.com/images/I/71A+MM44goL._AC_SX679_.jpg"
+         ]
+     },
+     {
+         "id": 24,
+         "title": "Logitech G Pro Wireless Gaming Mouse (910-005274)",
+         "description": "PRO Wireless was designed to be the ultimate gaming mouse for esports professionals. Over a 2 year period, Logitech G collaborated with more than 50 professional players to find the perfect shape, weight and feel combined with our LIGHTSPEED wireless and HERO 25k sensor technologies. The result is a gaming mouse with unrivaled performance and precision, giving you the tools and confidence needed to win.",
+         "price": 159.99,
+         "discountPercentage": 16.8,
+         "rating": 4.24,
+         "stock": 0,
+         "brand": "Logitech",
+         "category": "mouse",
+         "images": [
+             "https://assets.umart.com.au/newsite/images/201901/source_img/49132_P_1546396166701.webp"
+         ]
+     },
+     {
+         "id": 25,
+         "title": "Glorious GMMK Pro 75 Pre-Built Keyboard Black Slate",
+         "description": "The Glorious GMMK Pro 75 Pre-Built Keyboard Black Slate is a 75% sized keyboard that features an ultra-premium, gasket-mounted, hot-swappable design that naturally dampens keystrokes, fully programmable knob, factory lubed screw-in stabilisers and Glorious Fox linear mechanical switches, 5-pin south-facing modular PCB that is hot-swappable, making it easy to add or remove switches, supports plate and PCB mounted switches, full N-Key rollover, removable USB-C cable, elegant programmable side lighting, per-key RGB lighting, USB-C 2.0 interface, all on a CNC aluminium body, compatible with the Glorious Core software, QMK and VIA opensource firmware and includes 4 x additional Mac keycaps, 1 x novelty Esc keycap, 1 x black Glorious coiled cable, 1 x Glorious padded keyboard wrist rest, 1 x keycap puller and 1 x switch puller.",
+         "price": 529.99,
+         "discountPercentage": 10,
+         "rating": 4.67,
+         "stock": 11,
+         "brand": "GMMK",
+         "category": "keyboard",
+         "images": [
+             "https://img.pccasegear.com/tr:n-gallery/images/1646711507-GLO-GMMK-P75-FOX-B-thb.jpg"
+         ]
+     },
+     {
+         "id": 26,
+         "title": "Retro Compact Keyboard",
+         "description": "The Retro Compact Keyboard (RCK) is designed with premium materials, a timeless appearance, and a pleasing typing experience.• Premium craftsmanship with Napa leather or wood surface• Round, clicky center-lit mechanical keys• Compact form ideal for traveling or minimal space• Extra feet stands for optimal typing angle• Compatible with Mac & PC / Bluetooth & USB• Includes a matching palm rest and USB-C cable",
+         "price": 329.99,
+         "discountPercentage": 17.86,
+         "rating": 3.95,
+         "stock": 131,
+         "brand": "AZIO",
+         "category": "keyboard",
+         "images": [
+             "https://cdn.shopify.com/s/files/1/2975/1466/products/RCK_ELWOOD.jpg?v=1641494711"
+         ]
+     },
+     {
+         "id": 27,
+         "title": "Doge",
+         "description": "Stupid Doge",
+         "price": 9000,
+         "discountPercentage": 12.3,
+         "rating": 5,
+         "stock": 0,
+         "brand": "doge",
+         "category": "pets",
+         "images": [
+             "https://variety.com/wp-content/uploads/2023/04/Twitter-Logo-Doge-Dogecoin.png?w=640"
+         ]
+     },
+     {
+         "id": 28,
+         "title": "Bald Dog",
+         "description": "Stupid Dog 2",
+         "price": 9000,
+         "discountPercentage": 12.3,
+         "rating": 3.4,
+         "stock": 0,
+         "brand": "doge",
+         "category": "pets",
+         "images": [
+             "https://welovedoodles.com/wp-content/uploads/2022/02/walter-dog-meme-original-790x1024.jpeg"
+         ]
+     },
+     {
+         "id": 29,
+         "title": "Lionel Messi",
+         "description": "Ankara Messi",
+         "price": 300000,
+         "discountPercentage": 12.3,
+         "rating": 5,
+         "stock": 0,
+         "brand": "LM10",
+         "category": "player",
+         "images": [
+             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuyrlVeA3jvr5N-8jratcMHvHZldIgI9C_auCThDqgGbBiaq5J__que5s6Fnb66m_Txss&usqp=CAU"
+         ]
+     },
+     {
+         "id": 30,
+         "title": "Cristiano Ronaldo",
+         "description": "SIUUUUUUUUUUUUUUUU",
+         "price": 77777,
+         "discountPercentage": 12.3,
+         "rating": 5,
+         "stock": 0,
+         "brand": "CR7",
+         "category": "player",
+         "images": [
+             "https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltfcdeffabeec48348/60dc14140401cb0ebfac177e/cc0acdf7dc2968346cc8d86dc76b6763cbb8b8dd.jpg?format=jpg"
+         ]
+     }
+ ]
