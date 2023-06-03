@@ -36,12 +36,12 @@ export default {
   name: 'ChatMessage',
   components: { Message },
   setup() {
-    const { user, isLogin } = useAuth() // Accessing user authentication-related properties
-    const { messages, sendMessage } = useChat() // Accessing chat-related properties
+    const { user, isLogin } = useAuth() // accessing user authentication-related properties
+    const { messages, sendMessage } = useChat() // accessing chat-related properties
 
-    const bottom = ref(null) // Reference to the bottom div for scrolling
+    const bottom = ref(null) // reference to the bottom div for scrolling
 
-    // Watch for changes in the messages array and scroll to the bottom of the chat window
+    // watch for changes in the messages array and scroll to the bottom of the chat 
     watch(
       messages,
       () => {
@@ -51,10 +51,10 @@ export default {
       },
       { deep: true }
     )
-    const message = ref('') // Holds the value of the input field for sending messages
+    const message = ref('') //value of the input field for sending messages
     const send = () => {
-      sendMessage(message.value) // Send the message using the sendMessage function
-      message.value = '' // Reset the message value to empty after sending
+      sendMessage(message.value) // send the message using the sendMessage function
+      message.value = '' // reset the message value to empty after sending
     }
     return { user, isLogin, messages, bottom, message, send } 
   }

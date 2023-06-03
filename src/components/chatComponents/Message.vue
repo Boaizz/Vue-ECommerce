@@ -20,7 +20,7 @@
     props: {
       name: { type: String, default: '' },   // declaring properties
       photoUrl: { type: String, default: '' },  //URL of user photo
-      sender: { type: Boolean, default: false }  //isSender 
+      sender: { type: Boolean, default: false }  // check the sender 
     }
   }
   </script>

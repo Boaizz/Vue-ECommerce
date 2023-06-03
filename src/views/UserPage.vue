@@ -4,14 +4,14 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <div class="card">
-          <div v-if="user.loggedIn">
+          <div v-if="isLogin">
           <ProfileImage :src="user.data.displayPhoto" class="img-fluid" />
           <div class="card-header">Welcome, {{user.data.displayName}}</div>
           <div class="card-body">
             <div class="alert alert-success" role="alert">
             SHOPPING CART
             <div class="my-4">
-                  <button  @click.prevent="signOut" class="btn btn-primary">Log Out</button>
+                  <button  @click.prevent="signOut" class="btn btn-primary">Sign Out</button>
             </div>
             <div class="table-responsive">
                     <table class="table table-striped table-hover">
@@ -20,9 +20,7 @@
                                 <th>Name</th>
                                 <th>Image</th>
                                 <th>Unit Price</th>
-                                <th>qty</th>
-                                <th>Price</th>
-                                <th>Discount</th>
+                                <th>Quantity</th>
                                 <th>Total Price</th>
                                 <th></th>
                             </tr>
@@ -32,14 +30,10 @@
                                 <td><img :src="item.images[0]" class="" width="80" height="90" /></td>
                                 <td>{{ item.price }}</td>
                                 <td>{{ item.qty }}</td>
-                                <td>{{ item.price * item.qty }}</td>
-                                <td>{{ parseFloat(item.price * item.qty * 0.15).toFixed(2) }}</td>
-                                <td>{{ parseFloat(item.price * item.qty - item.price * item.qty * 0.15).toFixed(2) }}</td>
+                                <td>{{ parseFloat(item.price * item.qty).toFixed(2) }}</td>
                                 <td><a href="#" @click="removeCartItem(item.id)" class="text-danger px-3 py-1"><font-awesome-icon icon="fa-solid fa-remove " /></a></td>
                             </tr>                            
                             <tr>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -64,28 +58,29 @@
 </template>
 
 <script>
-import ProfileImage from '@/components/chatComponents/ProfileImage.vue'
+import ProfileImage from '@/components/chatComponents/ProfileImage.vue';
 import { useStore} from "vuex";
 import { useRouter } from "vue-router";
 import {computed} from "vue";
-import { auth } from '../firebaseConfig'
-import alert from 'sweetalert2'
+import { auth } from '@/firebaseConfig';
+import alert from 'sweetalert2';
+import { useAuth } from '@/firestore';
+
 
 export default {
   components: { ProfileImage },
   setup() {
   const store = useStore()
   const router = useRouter()
-
+  const { isLogin } = useAuth()
   auth.onAuthStateChanged(user => {
     store.dispatch("fetchUser", user);
   });
 
-
   const user = computed(() => {
     return store.getters.user;
   });
-
+  
   const signOut = () => {
         alert.fire({
         title: 'Are you sure?',
@@ -99,24 +94,31 @@ export default {
         }})
   }
 
-    return {user,signOut}
-
-
+    return {user,signOut, isLogin}
  },
+ data() {
+    return {
+      basketItems: [],   
+     
+    };
+  },
  methods: {
-
+        //load the cart item from local storage
         loadCartItem(){
             this.basketItems = sessionStorage.basketItems != undefined? JSON.parse(sessionStorage.basketItems): []           
         },
+        //function to remove item from cart
         removeCartItem(id){            
-            this.basketItems = this.basketItems.filter(function(el) { return el.id != id; })            
+            this.basketItems = this.basketItems.filter(function(d) { return d.id != id; })            
             sessionStorage.setItem('basketItems', JSON.stringify(this.basketItems));
             this.$store.commit('updateBasketCount',-1)
         },
+
+        //calculate the total price of the cart
         getTotal(){            
             let total = 0
             for (const item of this.basketItems) {                
-                total += item.price * item.qty - item.price * item.qty * 0.15                
+                total += item.price * item.qty               
             }
             return  parseFloat(total).toFixed(2)
         },                
@@ -125,7 +127,5 @@ export default {
         this.loadCartItem()                     
     },
   
-  
-
 };
 </script>

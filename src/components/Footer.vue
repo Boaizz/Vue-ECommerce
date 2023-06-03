@@ -23,9 +23,7 @@ export default {
 }
 </script>
 <style>
-
   footer {
 margin-top: auto;
   }
-  
 </style>
