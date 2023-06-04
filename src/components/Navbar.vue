@@ -11,7 +11,7 @@
       <b-navbar-nav class="navbar-nav ms-auto">
           <b-nav-item>
             <div class="nav-item px-2 pt-2">
-              <span class="badge rounded-pill bg-warning">{{ $store.state.basketCount }}</span><font-awesome-icon icon="fa-solid fa-cart-shopping" @click="openModalCart()" style="color: #2caf3b;" ></font-awesome-icon>
+              <span class="badge rounded-pill bg-warning">{{ store.state.basketCount }}</span><font-awesome-icon icon="fa-solid fa-cart-shopping" @click="openModalCart()" style="color: #2caf3b;" ></font-awesome-icon>
             </div>
           </b-nav-item>
           <b-nav-item>
@@ -21,7 +21,7 @@
           </b-nav-item>
           <b-nav-item>
               <div v-if="isLogin" class="login px-2 pt-2">
-                <ProfileImage :src="user.photoURL" to="/"/>
+                <RouterLink to="/user"><ProfileImage :src="user.photoURL" to="/"/></RouterLink>
               </div>
               <div v-else class="login px-2 pt-2">
                 <font-awesome-icon icon="right-to-bracket" style="color: #2caf3b;"  @click="signIn"></font-awesome-icon>
@@ -92,7 +92,8 @@
 
 </template>
 <script>
-import { ref } from 'vue';
+// import { computed } from 'vue';
+import { useStore } from 'vuex';
 import alert from 'sweetalert2';
 import ProfileImage from '@/components/chatComponents/ProfileImage.vue';
 import { useAuth } from '@/firestore';
@@ -100,32 +101,25 @@ export default {
   name: 'NavigationBar', 
   components: { ProfileImage },
   setup() {
+  const store = useStore();
   const { user, isLogin, signOut, signIn } = useAuth()
   //trigger the sweet alert when user successfully login
   const AlertSignIn = () => {
-    signIn().then(() => {
-      if (isLogin.value) {
-        alert.fire({
-          icon: 'success',
-          title: `Hello, ${user.value.displayName}!`,
-        });
-        const basketCount = ref(0);
-        const basketItems = sessionStorage.basketItems != undefined ? JSON.parse(sessionStorage.basketItems) : []
-        basketCount.value = basketItems.length;
-        this.$store.commit('updateBasketCount', basketCount.value);
-      } 
-    })
-  }
-  //   // You can declare a reactive reference for basketCount in setup
-
-  
-  
-  //       // If the user has logged in, load the cart items and set the basketCount to the number of items in the cart
-        
+  signIn().then(() => {
+    if (isLogin.value) {
+      alert.fire({
+        icon: 'success',
+        title: `Hello, ${user.value.displayName}!`,
+      }); 
       
-  
-  
-  return { user, isLogin, signOut, signIn: AlertSignIn }
+      const basketItems = sessionStorage.basketItems != undefined ? JSON.parse(sessionStorage.basketItems) : []
+      const totalQty = basketItems.reduce((total, item) => total + item.qty, 0)
+      store.commit('updateBasketCount', totalQty); 
+    } 
+  })
+}
+
+  return { user, isLogin, signOut, signIn: AlertSignIn, store}
 },
   data() {
     return {
@@ -165,9 +159,11 @@ export default {
 
     // remove a shopping cart item based on its ID
     removeCartItem(id) {
-      this.basketItems = this.basketItems.filter(function (d) { return d.id != id; });
+      const itemToRemove = this.basketItems.find(item => item.id === id);
+      const qtyToRemove = itemToRemove ? itemToRemove.qty : 0;
+      this.basketItems = this.basketItems.filter(item => item.id !== id);
       sessionStorage.setItem('basketItems', JSON.stringify(this.basketItems));
-      this.$store.commit('updateBasketCount', -1); // Update the basket count in the store
+      this.store.commit('updateBasketCount', -qtyToRemove); // Update the basket count in the store
     },
 
     // calculate the total price of the items in the shopping cart
@@ -181,7 +177,7 @@ export default {
 
     //load favorite items from the local storage
     loadFavoriteItems() {
-    return sessionStorage.favItems != undefined ? JSON.parse(sessionStorage.favItems) : [];
+      return sessionStorage.favItems != undefined ? JSON.parse(sessionStorage.favItems) : [];
     },
     //remove the favorite modal
     removeFavoriteItem(id) {
@@ -202,6 +198,14 @@ export default {
       this.favItems = this.loadFavoriteItems();
       this.modalFav = true;
     },
+    updateBasketOnLogin() {
+        // Check if there are any basket items in sessionStorage
+        const basketItems = sessionStorage.basketItems !== undefined ? JSON.parse(sessionStorage.basketItems) : [];
+        if (this.user && this.user.uid && basketItems.length > 0) {
+            // Update the basket for this user in Vuex store
+            this.store.commit('setBasket', { userId: this.user.uid, basket: basketItems });
+        }
+    },
     
   },
 
@@ -211,6 +215,6 @@ export default {
   },
 }
 </script>
-<style scope>
+<style>
 
 </style>

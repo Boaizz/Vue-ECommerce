@@ -1,6 +1,6 @@
 <template>
     <h1>HAVE A QUESTION?</h1>
-    <Chat/>
+    <Chat/> <!--Use the chat components-->
 </template>
   
   <script>

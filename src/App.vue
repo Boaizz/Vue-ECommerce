@@ -1,11 +1,11 @@
 <template>
   <header>
-    <navBar/>
+    <navBar/> 
   </header>
   <div>
   <sideBar/>
   </div>
-  <div :style="{ 'margin-left': sidebarWidth }"> <!-- eslint-disable-line -->
+  <div :style="{ 'margin-left': sidebarWidth }"> 
     <router-view />
   </div> 
   <!-- <div>
@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import sideBar from './components/sideBar/SideBar.vue'
-import { sidebarWidth } from './components/sideBar/state'
-import navBar from './components/Navbar.vue' 
-import footerComponent from './components/Footer.vue'
+import sideBar from '@/components/sideBar/SideBar.vue'
+import { sidebarWidth } from '@/components/sideBar/state'
+import navBar from '@/components/Navbar.vue' 
+import footerComponent from '@/components/Footer.vue'
 
 export default {
   name: 'App',

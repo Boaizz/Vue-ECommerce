@@ -73,14 +73,16 @@ export default {
   const store = useStore()
   const router = useRouter()
   const { isLogin } = useAuth()
+
+  //listen for changes in the authentication state
   auth.onAuthStateChanged(user => {
     store.dispatch("fetchUser", user);
   });
-
+  //computed property for accessing the user data from the store
   const user = computed(() => {
     return store.getters.user;
   });
-  
+  //function to handle the sign out process
   const signOut = () => {
         alert.fire({
         title: 'Are you sure?',
@@ -90,7 +92,7 @@ export default {
         confirmButtonText: 'Yes',
         cancelButtonText: 'No'}).then(async (result) => { if (result.isConfirmed){
         await store.dispatch('logOut')
-        router.push('/home')
+        router.push('/')
         }})
   }
 

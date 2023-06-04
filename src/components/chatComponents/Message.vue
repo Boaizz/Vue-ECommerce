@@ -1,10 +1,10 @@
 <template>
     <div class="message">
       <div class="row">
-        <span v-if="!sender" class="col-5">Admin: {{ name }}</span>
+        <span v-if="!sender" class="col-5">{{ name }}</span>
       </div>
       <div class="flex" :class="sender ? 'flex-row-reverse' : ''">  
-        <ProfileImage class="mt-1" :src="photoUrl" />
+        <ProfileImage class="mt-2" :src="photoUrl" />
         <div class="text" :class="sender ? 'bg-green-800' : 'bg-gray-700'">
           <slot />
         </div>

@@ -9,7 +9,7 @@ export default {
     icon: { type: String, required: true }
   },
   setup(props) {
-    const route = useRoute()
+    const route = useRoute() //define route for router
     const isActive = computed(() => route.path === props.to)
     return { isActive, collapsed }
   }

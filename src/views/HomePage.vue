@@ -25,9 +25,11 @@
  <div class="row justify-content-center" >
           <div class="card_items col-12 col-sm-6 col-md-4 col-lg-3 mb-4 px-2" v-for="item, index in slicedItems" :key="index" >              
                 <div class="card" >
-                 
-                      <div v-if="item.stock > 0" class="badge bg-success text-white position-absolute" style="top: 5px; right: 5px;">Available</div>
-                      <div v-if="!item.stock > 0" class="badge bg-danger text-white position-absolute" style="top: 5px; right: 5px;">Out of Order</div>
+                  <div class="badge bg-warning position-absolute fav" style="">
+                      <font-awesome-icon :icon="item.isFavorite ? 'fa-solid fa-heart' : 'fa-solid fa-heart-circle-plus'" :class="['badge', 'bg-warning', {'text-danger': item.isFavorite}]" @click="toggleFavorite(item)"   />
+                  </div>
+                      <div v-if="item.stock > 0" class="badge bg-success text-white position-absolute available" style="">Available</div>
+                      <div v-if="!item.stock > 0" class="badge bg-danger text-white position-absolute out" style="">Out of Order</div>
                       <img  :src="item.images[0]" @click="openModalDesc(item.id)" data-bs-toggle="collapse" class="card-img-top mt-5" width="200" height="400"/>                        
                       <div class="card-body">
                         <h6 class="h6 card-title text-center bold">{{ item.title }}</h6>
@@ -38,11 +40,6 @@
                           <div class="col-auto">
                             <button type="button" class="btn btn-info">
                               Buy Now <font-awesome-icon icon="fa-solid fa-bag-shopping" />
-                            </button>
-                          </div>
-                          <div class="col-auto">
-                            <button :class="['btn', 'btn-outline-danger', {'text-danger': item.isFavorite}]" @click="toggleFavorite(item)">
-                              <font-awesome-icon :icon="item.isFavorite ? 'fa-solid fa-heart' : 'fa-solid fa-heart-circle-plus'" />
                             </button>
                           </div>
                           <div class="col-auto">
@@ -123,6 +120,7 @@ export default{
       }
   },
   mounted(){
+      //load the data from json file
     const data = 'products.json';
     const fetchData = async () => {
       try {
@@ -148,12 +146,15 @@ export default{
 
   },
   methods:{
+    //set the chosen slide value in the modal description
     slideTo(val) {
       this.currentSlide = val
       if (this.currentSlide === this.selectedItem.images.length) {
         this.currentSlide = 0;
       }
     },
+
+    //open the modal for description of the item
     openModalDesc(id) {
       this.modalDesc = true
       for (var item of this.datas) {
@@ -162,10 +163,11 @@ export default{
       this.selectedItem = item;
       }}
     },
+    //set the current slide value in the modal description
     pageChangeHandler(selectedPage) {
     this.currentPage = selectedPage
-    }
-    ,
+    },
+    //swal of the successfully ordered items
     successOrder(){
       this.$store.commit('updateBasketCount',1)
       alert.fire({
@@ -177,9 +179,11 @@ export default{
                  timer: 3000  
                 })
     },
+    //sort the items by the category
     updateCategory(e){
         this.aCategory = e.target.text == 'All' ? '' : e.target.text
     },
+    //add Item to Basket
     addItem(id) {
       this.addItemToBasket(id);
     },
@@ -220,9 +224,12 @@ export default{
         });
       }
     },
+
+    //get the data of the items from the local storage
     getBasketItems(){
       return sessionStorage.basketItems != undefined? JSON.parse(sessionStorage.basketItems): []
     },
+    //remove the item from the basket
     removeBasketItem(id){
       this.basketItems = this.basketItems.filter((d) => d.id != id)            
       sessionStorage.setItem('basketItems', JSON.stringify(this.basketItems));
@@ -263,13 +270,13 @@ export default{
     getFavoriteItems() {
       return sessionStorage.favItems != undefined ? JSON.parse(sessionStorage.favItems) : [];
     },
-
+    //function to remove the favorite items from favorite array
     removeFavoriteItem(id) {
       this.favItems = this.getFavoriteItems();
       const updatedItems = this.favItems.filter((d) => d.id != id);
       sessionStorage.setItem('favItems', JSON.stringify(updatedItems));
     },
-
+    //handle when clicking the favorite item button
     toggleFavorite(item) {
       item.isFavorite = !item.isFavorite;
 
@@ -310,6 +317,14 @@ export default{
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
+}
+
+.available, .out {
+  top: 5px; right: 5px;
+}
+
+.fav {
+  top: 5px; left: 5px;
 }
 
 </style>

@@ -4,7 +4,7 @@ import { app, auth } from './firebaseConfig';
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
 // init firestore instance
 const firestore = getFirestore(app);
-const messagesCollection = collection(firestore, 'messages database'); // collection for firestore instance
+const messagesCollection = collection(firestore, 'messages'); // collection for firestore instance
 const messagesQuery = query(messagesCollection, orderBy('createdAt', 'desc'), limit(100));  //query for firestore collection
 //function to handle user authentication
 export function useAuth() {

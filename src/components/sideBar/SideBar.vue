@@ -11,9 +11,9 @@
     </h1>
 
     <SidebarLink to="/"><font-awesome-icon icon="fa-solid fa-house" bounce /> Home</SidebarLink>
-    <SidebarLink to="/user" @click="isLogin()"> <font-awesome-icon icon="fa-solid fa-circle-user" /> User</SidebarLink>
-    <SidebarLink to="/about"><font-awesome-icon icon="fa-solid fa-circle-info" /> About</SidebarLink>
+    <SidebarLink to="/user" @click="isLogin()"><font-awesome-icon icon="fa-solid fa-circle-user" /> User</SidebarLink>
     <SidebarLink to="/chat"  @click="isLogin()"><font-awesome-icon icon="fa-solid fa-message" /> Chat</SidebarLink>
+    <SidebarLink to="/about"><font-awesome-icon icon="fa-solid fa-circle-info" /> About</SidebarLink>
 
 
     <span

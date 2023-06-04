@@ -1,6 +1,6 @@
 /* eslint-disable */
 <template>
-    <div class="text-muted py-4 shadow-sm">
+    <div class="text-muted py-4 shadow-lg">
         <div class="d-flex flex-column flex-md-row flex-lg-row justify-content-around align-items-center">
             <ul class="list-inline d-flex align-items-center p-0 m-0">
                 <li class="list-inline-item px-1">
