@@ -127,9 +127,10 @@ export default{
         const res = await fetch(data);
         const d = await res.json();
         this.datas = d;
-        this.categories = [...new Set(d.map((x) => x.category))];
+        this.categories = [...new Set(d.map((x) => x.category))]; //extract unique categories from the data and assign them to the categories property
         this.datas.forEach(item => {
         const favorites = this.getFavoriteItems();
+        //check if the current item is in the list of favorite items
         if (favorites.some(favItem => favItem.id === item.id)) {
           item.isFavorite = true;
         } else {
@@ -143,9 +144,23 @@ export default{
   };
 
   fetchData();
+  auth.onAuthStateChanged(user => {
+    if (!user) {
+      //if user log out, reset all items
+      this.resetItems();
+    }
+  });
 
   },
   methods:{
+     //clear items from session storage
+    resetItems() {
+    for (let item of this.datas) {
+      item.isFavorite = false;
+    }
+    sessionStorage.removeItem('favItems');
+    sessionStorage.removeItem('basketItems');
+  },
     //set the chosen slide value in the modal description
     slideTo(val) {
       this.currentSlide = val
@@ -207,9 +222,8 @@ export default{
               }
             }
             if (found === false) {
-              item.qty = 1;
-              item.available = (item.stock > 0);
-              items.push(item);
+              let newItem = {...item, qty: 1, available: (item.stock > 0)};
+              items.push(newItem);
             }
             sessionStorage.setItem('basketItems', JSON.stringify(items));
             this.successOrder();
@@ -278,12 +292,22 @@ export default{
     },
     //handle when clicking the favorite item button
     toggleFavorite(item) {
-      item.isFavorite = !item.isFavorite;
+      const user = auth.currentUser;
+      if (user) {
+        item.isFavorite = !item.isFavorite;
 
-      if (item.isFavorite) {
-        this.addFavoriteItem(item.id);
+        if (item.isFavorite) {
+          this.addFavoriteItem(item.id);
+        } else {
+          this.removeFavoriteItem(item.id);
+        }
       } else {
-        this.removeFavoriteItem(item.id);
+        //display a message or perform any other action for unauthenticated users
+        alert.fire({
+          icon: 'warning',
+          title: 'Login required',
+          text: 'You must be logged in to perform this action',
+        });
       }
     },
   },

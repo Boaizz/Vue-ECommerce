@@ -7,7 +7,7 @@
         <div>E</div>
         <div>B</div>
       </span>
-      <span v-else>EBoiz</span>
+      <span v-else>EBoaiz</span>
     </h1>
 
     <SidebarLink to="/"><font-awesome-icon icon="fa-solid fa-house" bounce /> Home</SidebarLink>
@@ -45,7 +45,7 @@ export default {
 
         };
     },
-    methods: {
+    methods: {   // swalert for unauthenticated users 
         async isLogin(){
             const user = auth.currentUser;
             if (!user){
@@ -67,18 +67,9 @@ export default {
 
 
 <style>
-:root {
-  --sidebar-bg-color: #2f855a;
-  --sidebar-item-hover: #38a169;
-  --sidebar-item-active: #276749;
-}
-</style>
-
-<style scoped>
 .sidebar {
   color: white;
-  background-color: var(--sidebar-bg-color);
-
+  background-color: #1f7349;
   float: left;
   position: fixed;
   z-index: 1;
@@ -86,24 +77,18 @@ export default {
   left: 0;
   bottom: 0;
   padding: 0.5em;
-
   transition: 0.3s ease;
-
   display: flex;
   flex-direction: column;
 }
-
 .sidebar h1 {
   height: 2.5em;
 }
-
 .collapse-icon {
   position: absolute;
   bottom: 0;
   padding: 0.75em;
-
-  color: rgba(255, 255, 255, 0.7);
-
+  color: rgba(255, 255, 255, 0.1);
   transition: 0.2s linear;
 }
 

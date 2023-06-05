@@ -77,7 +77,7 @@
                   <td></td>
                   <td></td>
                   <td></td>
-                  <td><strong>Total</strong></td>
+                  <td><strong>{{ store.state.basketCount }}</strong></td>
                   <td><strong>${{ getTotal()}}</strong> </td>
                   <td></td>
                 </tr>
@@ -133,21 +133,21 @@ export default {
 
   methods: {
 
-    // open the shopping cart modal
+    //open the shopping cart modal
     openModalCart() {
-      if (!this.isLogin) {   // Check if user is logged in
+      if (!this.isLogin) {   //check if user is logged in
       alert.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'You need to login to open the cart!',
+        text: 'You need to login to open the cart',
       })
       return; 
-      }  // Stop execution if user is not logged 
+      }  //stop execution if user is not logged 
       this.basketItems = this.loadCartItem();
       this.modalShow = true;
     },
 
-    // close the shopping cart modal
+    //close the shopping cart modal
     closeModalCart() {
       this.modalShow = false;
     },
@@ -191,7 +191,7 @@ export default {
       alert.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'You need to login to open the favorite items!',
+        text: 'You need to login to open the favorite items',
       })
       return;
     }
@@ -199,10 +199,10 @@ export default {
       this.modalFav = true;
     },
     updateBasketOnLogin() {
-        // Check if there are any basket items in sessionStorage
+        //check if there are any basket items in sessionStorage
         const basketItems = sessionStorage.basketItems !== undefined ? JSON.parse(sessionStorage.basketItems) : [];
         if (this.user && this.user.uid && basketItems.length > 0) {
-            // Update the basket for this user in Vuex store
+            //update the basket for this user in Vuex store
             this.store.commit('setBasket', { userId: this.user.uid, basket: basketItems });
         }
     },

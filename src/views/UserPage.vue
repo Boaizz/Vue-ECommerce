@@ -11,7 +11,7 @@
             <div class="alert alert-success" role="alert">
             SHOPPING CART
             <div class="my-4">
-                  <button  @click.prevent="signOut" class="btn btn-primary">Sign Out</button>
+                  <button  @click.prevent="signOut" class="btn btn-success">Sign Out </button>
             </div>
             <div class="table-responsive">
                     <table class="table table-striped table-hover">

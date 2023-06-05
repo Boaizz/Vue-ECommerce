@@ -5,7 +5,7 @@
       </div>
       <div class="flex" :class="sender ? 'flex-row-reverse' : ''">  
         <ProfileImage class="mt-2" :src="photoUrl" />
-        <div class="text" :class="sender ? 'bg-green-800' : 'bg-gray-700'">
+        <div class="text" :class="sender ? 'send' : 'receive'">
           <slot />
         </div>
       </div>

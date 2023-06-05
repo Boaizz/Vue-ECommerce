@@ -66,14 +66,6 @@
   }
   
   
-  /* SendIcon.vue */
-  .icon-send {
-    width: 20px;
-    height: 20px;
-    fill: currentColor;
-    cursor: pointer;
-  }
-  
   .icon-send:hover {
     color: #1f9d55;
   }
@@ -110,11 +102,11 @@
     border-radius: 8px;
   }
   
-  .bg-green-800 {
+  .send {
     background-color: #1f9d55;
   }
   
-  .bg-gray-700 {
+  .receive {
     background-color: #333;
   }
   

@@ -9,7 +9,7 @@
             </ul>
             <div class="d-flex flex-column">
                 <h5 class="h6 text-center text-success bold">Dang Khanh Toan Nguyen</h5>
-                <h5 class="h6 text-center">Custom Project</h5>                
+                <h5 class="h6 text-center">Custom Project - COS30043</h5>                
             </div>
             <div class="d-flex flex-column">
                 <h5 class="w-100 h6 text-center text-muted bold">Developed by : Dang Khanh Toan Nguyen <i class="fas fa-envelope"></i></h5>

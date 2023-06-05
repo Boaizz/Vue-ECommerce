@@ -27,9 +27,8 @@ export default {
   </router-link>
 </template>
 
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
+<style>
+.fade-enter-active, .fade-leave-active {
   transition: opacity 0.1s;
 }
 .fade-enter,
@@ -51,10 +50,10 @@ export default {
   text-decoration: none;
 }
 .link:hover {
-  background-color: var(--sidebar-item-hover);
+  background-color: #5ad191;
 }
 .link.active {
-  background-color: var(--sidebar-item-active);
+  background-color: #9bc2b0;
 }
 .link .icon {
   flex-shrink: 0;
